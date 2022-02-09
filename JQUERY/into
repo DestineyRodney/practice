@@ -1,0 +1,30 @@
+What is Jquery?
+cross platform Javascript library to simplify scripting HTML
+
+Able to:
+navigate a document
+select DOM elements
+create animations
+handle events
+create Ajax applications
+add plugins
+
+ID Selector|	#id	Selects a single element with the given id attribute.
+Class Selector|	.class	Selects all elements with the given class.
+Element Selector|	element	Selects all elements with the given tag name.
+Multiple Selector|	selector1[, selector2[, ...]]	Selects the combined results of all the specified selectors.
+All Selector|	*	Selects all elements.
+
+General syntax
+$('selector') or jQuery('selector') : calls $ function and returns jQuery object which is an object that represents 0 or more html elements w all methods of jQuery attached to it
+
+Basic 2 methods
+.html: returns the HTML contents of selected element or the first element in a collection. Similar to the innerHTML property we previously covered.
+.css: allows us to change CSS properties for a given element or elements. Similar to the style property previously discussed.
+
+ID SELECTOR
+$('#id');
+
+ex <h2 id="student">Destiney</h2>
+var student = $('student').html();
+alert(student)

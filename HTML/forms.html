@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+<form method="POST" action="http://request-inspector.glitch.me/">
+    <label for="username">Username</label>
+    <input id="username" name="username" type="text">
+    <br>
+
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password">
+    <br>
+
+    <input type="submit">
+
+    <form action="https://request-inspector.glitch.me" method="POST">
+        <label for="zipcode">Zipcode</label>
+        <input type="text" name="zipcode" id="zipcode" placeholder="input a zipcode">
+        <button type="submit">Search</button>
+    </form>
+    <a href="https://request-inspector.glitch.me?username=Destiney">Search in username Destiney</a>
+
+
+    <!--    Method: the method attribute refers to HTTP method that is used to transmit data
+    If no method specified GET is default
+    GET METHOD: GET request users information without making any changes to data on the server.
+     any of the data that the form sends will be appended to the url in the form of a query string.
+     POST METHOD: used to make a change to existing data on the server
+     any of the data that the form sends will not be added to the url, but will instead be embedded in the body of the HTTP request as key-value pairs.
+     ACTION: location form data should be sent to
+     if no action specified it will be sent to current url
+     QUERY STRINGS: key:value pairs
+     Begins with ?followed by pair sperrated by ampersands(&)
+     ex: ?key1=value1&key2=value2&key3=value3
+
+     -->
+
+<!--    INPUTS
+TEXT INPUTS
+type="text"
+can add placeholder
+set type= password will hide input
+can add a value will prefill with specified text-->
+    <div>
+    <input type="text" placeholder="Enter Name">
+    <input type="password" value="password">
+        </div>
+
+<!--
+TEXT AREA used for longer text
+text area not void like input-->
+    <textarea name="comment" placeholder="Enter about me"></textarea>
+
+</form>
+
+</body>
+</html>
